@@ -1,0 +1,67 @@
+{
+  "name": "kiichain-lahat-staking-bot",
+  "version": "2.0.0",
+  "description": "🎪 Advanced Multi-Wallet Staking Bot for Kiichain Network - Pempek Lahat Technology",
+  "main": "enhanced-main.js",
+  "scripts": {
+    "start": "node enhanced-main.js",
+    "demo": "node enhanced-main.js demo",
+    "test": "node enhanced-main.js test",
+    "live": "node enhanced-main.js live",
+    "bulk": "node enhanced-main.js bulk-live",
+    "custom": "node enhanced-main.js custom-live",
+    "balances": "node enhanced-main.js balances",
+    "validators": "node enhanced-main.js validators",
+    "config": "node enhanced-main.js config",
+    "pempek-demo": "echo '🎪 Starting Pempek Lahat Demo...' && node enhanced-main.js demo",
+    "pempek-test": "echo '🧪 Pempek Test Mode...' && node enhanced-main.js test",
+    "pempek-live": "echo '🔥 Pempek Live Mode...' && node enhanced-main.js live",
+    "pempek-bulk": "echo '🚀 Pempek Bulk Mode...' && node enhanced-main.js bulk-live",
+    "pempek-custom": "echo '📊 Pempek Custom Mode...' && node enhanced-main.js custom-live",
+    "single-old": "node jekicen.js BALANCED",
+    "single-safe": "node jekicen.js SAFE",
+    "single-test": "node jekicen.js TEST",
+    "install-deps": "npm install prompt-sync dotenv ethers",
+    "setup-env": "echo 'WALLET_1=your_private_key_here\nWALLET_1_NAME=Main Wallet\nWALLET_2=\nWALLET_2_NAME=Trading Wallet' > .env.example",
+    "help": "echo '\n🎪 KIICHAIN LAHAT BOT COMMANDS:\n' && echo '  npm run demo     - Full demo mode' && echo '  npm run test     - Quick test' && echo '  npm run live     - Interactive staking' && echo '  npm run bulk     - Bulk stake all' && echo '  npm run custom   - Custom sessions' && echo '  npm run balances - Show balances' && echo '  npm run config   - Show config\n'",
+    "validate": "node -e \"console.log('🔍 Validating configuration...'); try { require('./enhanced-main.js'); console.log('✅ Configuration valid!'); } catch(e) { console.log('❌ Error:', e.message); }\""
+  },
+  "keywords": [
+    "kiichain",
+    "staking",
+    "bot",
+    "crypto",
+    "automation",
+    "defi",
+    "validator",
+    "multi-wallet",
+    "pempek",
+    "lahat",
+    "kiichain-lahat"
+  ],
+  "author": "Pempek Lahat Technology",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ethers": "^6.14.3",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "pm2": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pempek-lahat/kiichain-staking-bot"
+  },
+  "bugs": {
+    "url": "https://github.com/pempek-lahat/kiichain-staking-bot/issues"
+  },
+  "homepage": "https://github.com/pempek-lahat/kiichain-staking-bot#readme",
+  "bin": {
+    "kiichain-bot": "./enhanced-main.js",
+    "pempek-bot": "./enhanced-main.js"
+  }
+}
