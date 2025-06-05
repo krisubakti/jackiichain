@@ -30,8 +30,8 @@ Advanced automated staking bot for Kiichain network with multi-wallet support, b
 ### Quick Setup
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/kiichain-staking-bot.git
-cd kiichain-staking-bot
+git clone https://github.com/krisubakti/jackiichain.git
+cd jackiichain
 
 # Install dependencies
 npm install
